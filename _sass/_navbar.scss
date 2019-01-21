@@ -1,0 +1,36 @@
+.navbar-container {
+  margin: 2em 0;
+  .logo {
+    display: block;
+    width: 30%;
+    svg {
+      fill: #023d79;
+
+      &:hover {
+        fill: #dc5849;
+      }
+    }
+  }
+
+  .nav {
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+
+  .nav-item > * {
+    color: #023d79;
+    &.active,
+    &:hover {
+      color: #dc5849;
+    }
+  }
+
+  .nav-bullet {
+    line-height: 1.8em;
+    color: #023d79;
+  }
+
+  .social-links {
+    padding: 5px 16px;
+  }
+}

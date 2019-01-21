@@ -1,0 +1,29 @@
+.contrast-container {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Teko:500");
+
+.ft-fml-1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ft-fml-2 {
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+.ft-clr-1 {
+  color: #023d79;
+}
+
+.ft-clr-2 {
+  color: #dc5849;
+}
+
+.ft-bdr-1 {
+  border-bottom: 3px dotted #d8a894;
+}

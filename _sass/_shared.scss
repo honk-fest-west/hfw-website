@@ -4,15 +4,15 @@
   padding: 20px;
   margin-bottom: 20px;
 }
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-@import url("https://fonts.googleapis.com/css?family=Teko:500");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Teko:500');
 
 .ft-fml-1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .ft-fml-2 {
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
   text-transform: uppercase;
 }
 
@@ -26,4 +26,21 @@
 
 .ft-bdr-1 {
   border-bottom: 3px dotted #d8a894;
+}
+
+a {
+  font-weight: bold;
+  color: #dc5849;
+
+  &:hover {
+    color: #023d79;
+  }
+}
+
+.img-link {
+  border: 2px solid #dc5849;
+
+  &:hover {
+    border-color: #023d79;
+  }
 }

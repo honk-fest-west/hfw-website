@@ -53,12 +53,14 @@ title: Sponsors - HONK! Fest West
           Washington State with the services, resources, and opportunities they
           need to forge their own paths to sustainable success.
         </p>
-        <img
-          src="{{ '/assets/images/sponsors/shunpike.gif' | relative_url }}"
-          alt="Shunpike"
-          class="rounded mx-auto d-block"
-          style="padding: 10px; height: 100px; background-color: #f4efdf;"
-        />
+        <a href="{{ site.data.sponsors.shunpike.link }}" target="_blank">
+          <img
+            src="{{ site.data.sponsors.shunpike.image | relative_url }}"
+            alt="{{ site.data.sponsors.shunpike.name }}"
+            class="rounded mx-auto d-block"
+            style="padding: 10px; height: 100px; background-color: #f4efdf;"
+          />
+        </a>
         <p class="mt-3">
           HONK! Fest West is supported, in part, by grant awards from
           <a href="http://www.4culture.org/" target="_blank">4Culture</a> and
@@ -66,18 +68,16 @@ title: Sponsors - HONK! Fest West
           <a href="http://www.tides.org/" target="_blank">Tides Foundation</a>.
         </p>
         <div class="d-flex justify-content-around">
-          <img
-            src="{{ '/assets/images/sponsors/4culture.png' | relative_url }}"
-            alt="4 Culture"
-            class="rounded"
-            style="height: 100px;"
-          />
-          <img
-            src="{{ '/assets/images/sponsors/tides.png' | relative_url }}"
-            alt="Tides Foundation"
-            class="rounded"
-            style="height: 100px;"
-          />
+          {% for sponsor in site.data.sponsors.arts %}
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img
+              src="{{ sponsor.image | relative_url }}"
+              alt="{{ sponsor.name }}"
+              class="rounded"
+              style="height: 100px;"
+            />
+          </a>
+          {% endfor %}
         </div>
         <p class="mt-3">
           We thank the original
@@ -119,26 +119,16 @@ title: Sponsors - HONK! Fest West
           city’s parks and public streets.
         </p>
         <div class="d-flex justify-content-around">
-          <a href="http://www.seattle.gov/" target="_blank">
+          {% for sponsor in site.data.sponsors.venues %}
+          <a href="{{ sponsor.link }}" target="_blank">
             <img
-              src="{{
-                '/assets/images/sponsors/city_of_seattle.jpg' | relative_url
-              }}"
-              alt="City of Seattle"
+              src="{{ sponsor.image | relative_url }}"
+              alt="{{ sponsor.name }}"
               class="rounded"
               style="height: 100px;"
             />
           </a>
-          <a href="https://www.seattle.gov/parks" target="_blank">
-            <img
-              src="{{
-                '/assets/images/sponsors/seattle_parks.jpg' | relative_url
-              }}"
-              alt="Seattle Parks And Recreation"
-              class="rounded"
-              style="height: 100px;"
-            />
-          </a>
+          {% endfor %}
         </div>
       </div>
       <div class="contrast-container">
@@ -149,40 +139,16 @@ title: Sponsors - HONK! Fest West
           the festival. Thank you!
         </p>
         <div class="d-flex justify-content-around">
-          <a href="https://www.nuflours.com/" target="_blank">
+          {% for sponsor in site.data.sponsors.food %}
+          <a href="{{ sponsor.link }}" target="_blank">
             <img
-              src="{{ '/assets/images/sponsors/nuflours.jpeg' | relative_url }}"
-              alt="nuflours"
+              src="{{ sponsor.image | relative_url }}"
+              alt="{{ sponsor.name }}"
               class="rounded"
               style="height: 90px;"
             />
           </a>
-          <a href="http://macrinabakery.com/" target="_blank">
-            <img
-              src="{{ '/assets/images/sponsors/macrina.png' | relative_url }}"
-              alt="Macrina Bakery"
-              class="rounded"
-              style="height: 90px;"
-            />
-          </a>
-          <a href="http://www.columbiacitybakery.com/" target="_blank">
-            <img
-              src="{{ '/assets/images/sponsors/ccbakery.png' | relative_url }}"
-              alt="Columbia City Bakery"
-              class="rounded"
-              style="height: 90px;"
-            />
-          </a>
-          <a href="http://www.freshfloursseattle.com/" target="_blank">
-            <img
-              src="{{
-                '/assets/images/sponsors/fresh_flours.jpeg' | relative_url
-              }}"
-              alt="Fresh Flours"
-              class="rounded"
-              style="height: 90px;"
-            />
-          </a>
+          {% endfor %}
         </div>
       </div>
     </div>

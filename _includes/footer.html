@@ -1,6 +1,71 @@
-<footer class="container">
-  <p class="float-right"><a href="#">Back to top</a></p>
-  <p>
-    © 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
-  </p>
-</footer>
+<div class="footer-inner">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <h3 class="ft-fml-2 ft-clr-3">Media Sponsor</h3>
+        <a href="{{ site.data.sponsors.kuow.link }}" target="_blank">
+          <img
+            src="{{ site.data.sponsors.kuow.image | relative_url }}"
+            alt="{{ site.data.sponsors.kuow.name }}"
+            style="height: 100px;"
+          />
+        </a>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="{{ site.data.sponsors.shunpike.link }}" target="_blank">
+          <img
+            src="{{ site.data.sponsors.shunpike.image | relative_url }}"
+            alt="{{ site.data.sponsors.shunpike.name }}"
+            class="rounded mx-auto d-block"
+            style="padding: 10px; height: 100px; background-color: #f4efdf;"
+          />
+        </a>
+        <p>
+          HONK! Fest West is fiscally sponsored by Shunpike.<br />
+          <b>About Shunpike</b><br />
+          Shunpike is the 501(c)(3) non-profit agency that provides independent
+          arts groups in Washington State with the services, resources, and
+          opportunities they need to forge their own paths to sustainable
+          success.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3 class="ft-fml-2 ft-clr-3">Sponsors</h3>
+        <div class="sponsors d-flex flex-wrap justify-content-around">
+          {% assign sponsors = site.data.sponsors.arts | concat:
+          site.data.sponsors.venues | concat: site.data.sponsors.food %} {% for
+          sponsor in sponsors %}
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img
+              src="{{ sponsor.image | relative_url }}"
+              alt="{{ sponsor.name }}"
+              class="rounded"
+            />
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-3 bottom-nav">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <a class="clr-home" href="{{ '/' | relative_url }}"
+        >© 2019 HONK! Fest West</a
+      >
+    </div>
+    <div class="col-md-4 text-center">
+      <ul class="nav justify-content-around">
+        {% for item in site.data.navigation.social %}
+        <li class="nav-item social-links">
+          <a class="social-link" target="_blank" href="{{ item.link }}"
+            ><i class="fab {{ item.icon }}"></i
+          ></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-4 text-center"><a href="#">Back to top</a></div>
+  </div>
+</div>

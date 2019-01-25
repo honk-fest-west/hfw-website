@@ -1,0 +1,35 @@
+shunpike:
+  name: Shunpike
+  link: http://shunpike.org
+  image: /assets/images/sponsors/shunpike.gif
+kuow:
+  name: KUOW
+  link: http://kuow.org
+  image: /assets/images/sponsors/kuow.png
+arts:
+  - name: Tides Foundation
+    link: http://www.tides.org
+    image: /assets/images/sponsors/tides.png
+  - name: 4 Culture
+    link: http://www.4culture.org
+    image: /assets/images/sponsors/4culture.png
+venues:
+  - name: City of Seattle
+    link: https://www.seattle.gov
+    image: /assets/images/sponsors/city_of_seattle.jpg
+  - name: Seattle Parks And Recreation
+    link: https://www.seattle.gov/parks
+    image: /assets/images/sponsors/seattle_parks.jpg
+food:
+  - name: nuflours
+    link: https://www.nuflours.com
+    image: /assets/images/sponsors/nuflours.jpeg
+  - name: Macrina Bakery
+    link: http://macrinabakery.com
+    image: /assets/images/sponsors/macrina.png
+  - name: Columbia City Bakery
+    link: http://www.columbiacitybackery.com
+    image: /assets/images/sponsors/ccbakery.png
+  - name: Fresh Flours
+    link: http://www.freshfloursseattle.com
+    image: /assets/images/sponsors/fresh_flours.jpeg

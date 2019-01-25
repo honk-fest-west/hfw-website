@@ -6,6 +6,7 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Teko:500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 .ft-fml-1 {
   font-family: 'Josefin Sans', sans-serif;
@@ -14,6 +15,17 @@
 .ft-fml-2 {
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+.clr-home {
+  fill: #00483d;
+  color: #00483d;
 }
 
 .ft-clr-1 {

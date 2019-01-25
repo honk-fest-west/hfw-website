@@ -1,6 +1,6 @@
 .contrast-container {
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -17,11 +17,15 @@
 }
 
 .ft-clr-1 {
-  color: #023d79;
+  color: #489ca7;
 }
 
 .ft-clr-2 {
   color: #dc5849;
+}
+
+.ft-clr-3 {
+  color: #00483d;
 }
 
 .ft-bdr-1 {
@@ -33,7 +37,7 @@ a {
   color: #dc5849;
 
   &:hover {
-    color: #023d79;
+    color: #d8a894;
   }
 }
 
@@ -41,6 +45,6 @@ a {
   border: 2px solid #dc5849;
 
   &:hover {
-    border-color: #023d79;
+    border-color: #d8a894;
   }
 }

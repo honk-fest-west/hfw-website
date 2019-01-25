@@ -4,10 +4,10 @@
     display: block;
     width: 30%;
     svg {
-      fill: #023d79;
+      fill: #00483d;
 
       &:hover {
-        fill: #dc5849;
+        fill: #d8a894;
       }
     }
   }
@@ -19,16 +19,21 @@
 
   .nav-item > * {
     font-weight: normal;
-    color: #023d79;
-    &.active,
-    &:hover {
+    color: #3f746c;
+    &.active {
       color: #dc5849;
+      &:hover {
+        color: #dc5849;
+      }
+    }
+    &:hover {
+      color: #d8a894;
     }
   }
 
   .nav-bullet {
     line-height: 1.8em;
-    color: #023d79;
+    color: #3f746c;
   }
 
   .social-links {

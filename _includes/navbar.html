@@ -1,24 +1,26 @@
-<nav class="navbar-container">
+<div class="navbar-container">
   <a class="logo mx-auto my-4" href="{{ '/' | relative_url }}">
     {% include logo.html %}
   </a>
-  <ul class="nav justify-content-center sticky-top">
-    {% for item in site.data.navigation.main %}
-    <li class="nav-item">
-      <a
-        class="nav-link ft-fml-1 {% if page.url == (item.link | relative_url) %}active{% endif %}"
-        href="{{ item.link | relative_url }}"
-        >{{ item.name }}</a
-      >
-    </li>
-    <li><span class="nav-bullet">&#8226;</span></li>
-    {% endfor %}
-    <li class="nav-item social-links">
-      {% for item in site.data.navigation.social %}
-      <a class="social-link" target="_blank" href="{{ item.link }}"
-        ><i class="fab {{ item.icon }}"></i
-      ></a>
+  <nav>
+    <ul class="nav justify-content-center">
+      {% for item in site.data.navigation.main %}
+      <li class="nav-item">
+        <a
+          class="nav-link ft-fml-1 {% if page.url == (item.link | relative_url) %}active{% endif %}"
+          href="{{ item.link | relative_url }}"
+          >{{ item.name }}</a
+        >
+      </li>
+      <li><span class="nav-bullet">&#8226;</span></li>
       {% endfor %}
-    </li>
-  </ul>
-</nav>
+      <li class="nav-item social-links">
+        {% for item in site.data.navigation.social %}
+        <a class="social-link" target="_blank" href="{{ item.link }}"
+          ><i class="fab {{ item.icon }}"></i
+        ></a>
+        {% endfor %}
+      </li>
+    </ul>
+  </nav>
+</div>

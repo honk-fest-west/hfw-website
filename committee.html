@@ -1,0 +1,69 @@
+---
+layout: default
+title: Committee - HONK! Fest West
+members:
+  - name: Steve
+    title: Committee Chair
+    image: /assets/images/dinos/d01.jpeg
+  - name: Jeanette
+    title: Treasurer
+    image: /assets/images/dinos/d02.jpeg
+  - name: Adrienne
+    title: Secretary
+    image: /assets/images/dinos/d03.jpeg
+  - name: Katie
+    title: Volunteer Coordinator
+    image: /assets/images/dinos/d04.jpeg
+  - name: Mogwai
+    title: Volunteer Coordinator
+    image: /assets/images/dinos/d05.jpeg
+  - name: Ando
+    title: Social Media + Art Lead
+    image: /assets/images/dinos/d06.jpeg
+  - name: Susan
+    title: Mother of the Golden Dino
+    image: /assets/images/dinos/d07.jpeg
+  - name: Grace
+    title: Merch Lead
+    image: /assets/images/dinos/d08.jpeg
+  - name: Marissa
+    title: Booking Liaison
+    image: /assets/images/dinos/d09.jpeg
+  - name: Ethan
+    title: Housing Coordinator
+    image: /assets/images/dinos/d10.jpeg
+  - name: Leslie
+    title: Food Lead
+    image: /assets/images/dinos/d11.jpeg
+  - name: Mark
+    title: Community Outreach
+    image: /assets/images/dinos/d12.jpeg
+  - name: Lizzy
+    title: Operations Lead
+    image: /assets/images/dinos/d13.jpeg
+---
+
+<div id="committee-page" class="container">
+  <div class="dino-track">
+    <a
+      href="{{ '/committee.html' | relative_url }}"
+      id="golden-dino"
+      class="active"
+    ></a>
+  </div>
+  <h1 class="ft-fml-2 text-center">Welcome to the Lair of the Golden Dino</h1>
+  <div class="members d-flex flex-wrap justify-content-around">
+    {% for member in page.members %}
+    <div class="member text-center contrast-container">
+      <div
+        class="member-image rounded-circle mx-auto"
+        style="background-image: url({{ member.image | relative_url }})"
+        class="rounded-circle"
+      ></div>
+      <h2 class="ft-fml-2 mt-2">{{ member.name }}</h2>
+      <p>{{ member.title }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <h1 class="ft-fml-2 text-center">RAWR!</h1>
+</div>

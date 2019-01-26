@@ -48,24 +48,31 @@
     </div>
   </div>
 </div>
-<div class="container py-3 bottom-nav">
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <a class="clr-home" href="{{ '/' | relative_url }}"
-        >© 2019 HONK! Fest West</a
-      >
+<div class="dino-track">
+  <div class="container py-3 bottom-nav">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <a class="clr-home" href="{{ '/' | relative_url }}"
+          >© 2019 HONK! Fest West</a
+        >
+        <a
+          href="{{ '/committee.html' | relative_url }}"
+          id="golden-dino"
+          class="{% if page.golden_dino == 'show' %}active{% endif %}"
+        ></a>
+      </div>
+      <div class="col-md-4 text-center">
+        <ul class="nav justify-content-around">
+          {% for item in site.data.navigation.social %}
+          <li class="nav-item social-links">
+            <a class="social-link" target="_blank" href="{{ item.link }}"
+              ><i class="fab {{ item.icon }}"></i
+            ></a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-4 text-center"><a href="#">Back to top</a></div>
     </div>
-    <div class="col-md-4 text-center">
-      <ul class="nav justify-content-around">
-        {% for item in site.data.navigation.social %}
-        <li class="nav-item social-links">
-          <a class="social-link" target="_blank" href="{{ item.link }}"
-            ><i class="fab {{ item.icon }}"></i
-          ></a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col-md-4 text-center"><a href="#">Back to top</a></div>
   </div>
 </div>

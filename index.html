@@ -1,9 +1,19 @@
 ---
 layout: default
 title: HONK! Fest West
+carousel_images:
+  - /assets/images/carousel/001.jpg
+  - /assets/images/carousel/002.jpg
+  - /assets/images/carousel/003.jpg
+  - /assets/images/carousel/004.jpg
+  - /assets/images/carousel/005.jpg
+  - /assets/images/carousel/006.jpg
+  - /assets/images/carousel/007.jpg
+  - /assets/images/carousel/008.jpg
+  - /assets/images/carousel/009.jpg
 ---
 
-<div class="container">
+<div id="index-page" class="container">
   <div class="contrast-container">
     <h2 class="ft-fml-1 ft-bdr-1">
       <span class="ft-clr-1 ">Winter Warmup</span>
@@ -95,5 +105,43 @@ title: HONK! Fest West
         </div>
       </div>
     </div>
+  </div>
+
+  <div
+    id="imageCarousel"
+    class="carousel slide contrast-container p-3"
+    data-ride="carousel"
+  >
+    <div class="carousel-inner">
+      {% for image in page.carousel_images %}
+      <div
+        class="carousel-item {% if forloop.first == true %}active{% endif %}"
+        data-interval="4000"
+      >
+        <div
+          style="background-image: url({{ image | relative_url }})"
+          class="d-block w-100"
+        ></div>
+      </div>
+      {% endfor %}
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#imageCarousel"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#imageCarousel"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>

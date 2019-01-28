@@ -67,7 +67,7 @@ title: Sponsors - HONK! Fest West
           the Community Investments Fund of
           <a href="http://www.tides.org/" target="_blank">Tides Foundation</a>.
         </p>
-        <div class="d-flex justify-content-around">
+        <div class="d-flex flex-wrap justify-content-around">
           {% for sponsor in site.data.sponsors.arts %}
           <a href="{{ sponsor.link }}" target="_blank">
             <img
@@ -118,7 +118,7 @@ title: Sponsors - HONK! Fest West
           are also thankful to the City of Seattle for allowing us to use the
           city’s parks and public streets.
         </p>
-        <div class="d-flex justify-content-around">
+        <div class="d-flex flex-wrap justify-content-around">
           {% for sponsor in site.data.sponsors.venues %}
           <a href="{{ sponsor.link }}" target="_blank">
             <img
@@ -138,13 +138,13 @@ title: Sponsors - HONK! Fest West
           volunteers to keep hungry musicians and volunteers well-fed throughout
           the festival. Thank you!
         </p>
-        <div class="d-flex justify-content-around">
+        <div class="d-flex flex-wrap justify-content-around">
           {% for sponsor in site.data.sponsors.food %}
           <a href="{{ sponsor.link }}" target="_blank">
             <img
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"
-              class="rounded"
+              class="rounded mb-3"
               style="height: 90px;"
             />
           </a>

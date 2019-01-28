@@ -1,7 +1,11 @@
 <div class="navbar-container">
-  <a class="logo mx-auto my-4" href="{{ '/' | relative_url }}">
-    {% include logo.html %}
-  </a>
+  <div class="row">
+    <div class="col-10 col-md-4 mx-auto">
+      <a class="logo mx-auto my-4" href="{{ '/' | relative_url }}">
+        {% include logo.html %}
+      </a>
+    </div>
+  </div>
   <nav>
     <ul class="nav justify-content-center">
       {% for item in site.data.navigation.main %}

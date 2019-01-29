@@ -2,8 +2,9 @@
   .logo {
     display: block;
     svg {
+      fill: rgba(#00483d, 0.8);
       &:hover {
-        fill: #d8a894;
+        fill: rgba(#00483d, 0.6);
       }
     }
   }

@@ -50,8 +50,8 @@ at the bottom](#reverting-back-to-wordpress).
 
 Updating the live website is as simple a making a change on your local version of the site, commiting changes with git, and pushing them to github.com. Let's say you want to add a new post on the front page for the 2030 HONK! Fest West Spring fund raiser:
 
-1. Open the `hfw-website/index.html` file in your favorite HTML editor
-2. Add a new contrast-container in the #index-page container
+1. Open the `hfw-website/index.html` file in your favorite HTML editor.
+2. Add a new contrast-container in the #index-page container.
 
    ```
    <div class="contrast-container">
@@ -98,21 +98,21 @@ Updating the live website is as simple a making a change on your local version o
    </div>
    ```
 
-3. Save the `hfw-website/index.html` file
-4. Preview your changes by starting the jekyll server in the hfw-website directory
+3. Save the `hfw-website/index.html` file.
+4. Preview your changes by starting the jekyll server in the hfw-website directory.
 
    ```
    jekyll serve
    ```
 
 5. and open your browser to `http://localhost:4000`
-6. When satisfied, commit your changes with git
+6. When satisfied, commit your changes with git.
 
    ```
    git commit -am "Add Spring Fundraiser to front page"
    ```
 
-7. Push the updates to the master branch on github
+7. Push the updates to the master branch on github.
 
    ```
    git push origin master

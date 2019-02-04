@@ -1,7 +1,7 @@
 # HONK! Fest West - Website
 
 The HFW website is a static page site hosted by [Github.com](https://github.com).
-If you already know HTML and CSS, you have 90% of the tools required to update and maintain this site!
+If you already know HTML and CSS, you have 90% of the tools required to update and maintain this site.
 Other tools you'll need to know about are:
 
 - [git](https://git-scm.com/) Version control (keeps a history of all modifications)
@@ -48,7 +48,7 @@ at the bottom](#reverting-back-to-wordpress).
 
 ## Updating www.honkfestwest.org
 
-Updating the live website is a simple a making a change on your local version of the site, commiting the changes with git, and pushing them to github.com. Let's say you want to add a new post on the front page for the 2030 HONK! Fest West Spring fund raiser:
+Updating the live website is as simple a making a change on your local version of the site, commiting changes with git, and pushing them to github.com. Let's say you want to add a new post on the front page for the 2030 HONK! Fest West Spring fund raiser:
 
 1. Open the `hfw-website/index.html` file in your favorite HTML editor
 2. Add a new contrast-container in the #index-page container
@@ -123,6 +123,6 @@ Updating the live website is a simple a making a change on your local version of
 So you want to revert back to Wordpress? Good luck. I wish you well in your endevours. No hard feelings.
 
 1. Log into the HONK! Fest West account on dreamhost.com.
-2. Click on _Manage Domains_ in the left hand menu column.
-3. Under the _WEB HOSTING_ column, in the _honkfestwest.org_ row, click on the _Edit_ button.
-4. Look for the _Fully host this domain_ button and click it.
+2. Click on **Manage Domains** in the left hand menu column.
+3. Under the **WEB HOSTING** column, in the **honkfestwest.org** row, click on the **Edit** button.
+4. Look for the **Fully host this domain** button and click it.

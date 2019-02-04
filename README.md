@@ -19,7 +19,7 @@ decided to get rid of the Wordpress rope-pushing way of doing things and go stra
 <br/><br/>
 If it is ever required to go back to the old Wordpress site (not recommended), a simple change to the
 DNS records on Dreamhost will revert back to the pre-2019 website hosted by Wordpress. [See instructions
-at the bottom][reverting back to wordpress].
+at the bottom](#reverting-back-to-wordpress).
 
 ## Local Installation
 

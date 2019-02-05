@@ -1,11 +1,7 @@
 .navbar-container {
   .logo {
-    display: block;
-    svg {
-      fill: rgba(#00483d, 0.8);
-      &:hover {
-        fill: rgba(#00483d, 0.6);
-      }
+    &:hover {
+      filter: brightness(1.2);
     }
   }
 

@@ -15,22 +15,48 @@ golden_dino: show
 ---
 
 <div id="index-page" class="container">
-  <div id="hcalendar-event-title" class="h-card vevent contrast-container">
+  <div
+    itemscope
+    itemtype="http://schema.org/Festival"
+    class="contrast-container"
+  >
+    <meta
+      itemprop="description"
+      content="HONK! Fest West is an accessible community music festival driven by the energetic performances of street bands in public spaces. In 2019, we are embracing activism by engaging with and empowering the underserved communities of our region."
+    />
+    <link itemprop="url" href="https://www.honkfestwest.org" rel="author" />
     <h2
       class="ft-fml-2 ft-clr-2 text-center m-0 d-flex justify-content-center flex-wrap"
       style="letter-spacing: 0.04em;"
     >
-      <div class="p-name summary">HONK! Fest West</div>
+      <a
+        class="d-block font-weight-normal"
+        itemprop="url"
+        href="https://www.honkfestwest.org"
+        ><span itemprop="name">HONK! Fest West</span></a
+      >
       <div class="d-none d-sm-none d-md-block">&nbsp;|&nbsp;</div>
       <div>
-        <time datetime="2019-05-31" class="dtstart">May 31<sup>st</sup></time>
+        <time itemprop="startDate" content="2019-05-31"
+          >May 31<sup>st</sup></time
+        >
         -
-        <time datetime="2019-06-02" class="dtend"
+        <time itemprop="endDate" content="2019-06-02"
           >June 2<sup>nd</sup> 2019</time
         >
       </div>
+
       <div class="d-none d-sm-none d-md-none d-lg-block">&nbsp;|&nbsp;</div>
-      <div class="location">Seattle, Washington</div>
+      <div
+        itemprop="address"
+        itemscope
+        itemtype="http://schema.org/PostalAddress"
+      >
+        <div>
+          <span itemprop="addressLocality">Seattle</span>,
+          <span itemprop="addressRegion">Washington</span>
+        </div>
+      </div>
     </h2>
   </div>
 

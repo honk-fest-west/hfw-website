@@ -60,6 +60,45 @@ golden_dino: show
     </h2>
   </div>
 
+  {% for post in site.posts %}
+  <div class="contrast-container">
+    <h2 class="ft-fml-1 ft-bdr-1">
+      <span class="ft-clr-1 ">{{ post.title }}</span>
+      <span class="text-muted">{{ post.subtitle }}</span>
+    </h2>
+    <div class="row">
+      <div class="col-md-4">
+        <a
+          target="_blank"
+          href="{{ post.external_url }}"
+        >
+          <img
+            class="img-link img-fluid"
+            src="{{ post.image_url }}"
+          />
+        </a>
+      </div>
+      <div class="col-md-8">
+        <ul class="list-unstyled">
+          <li>
+            <strong>
+              <span class="text-muted">When:</span> 
+              {{ post.event_date | date: "%a, %B %d, %l:%M%P" }}
+            </strong>
+          </li>
+          <li>
+            <strong>
+              <span class="text-muted">Where:</span> 
+              <a href="https://www.google.com/maps/search/{{ post.location }}" target="_blank">{{ post.location }}</a>
+            </strong>
+          </li>
+        </ul>
+        <div>{{ post.content }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
   <div class="row">
     <div class="col-md-4">
       <div class="contrast-container rounded">

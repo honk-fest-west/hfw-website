@@ -67,18 +67,18 @@ golden_dino: show
       <span class="text-muted">{{ post.subtitle }}</span>
     </h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-5 col-lg-3">
         <a
           target="_blank"
           href="{{ post.external_url }}"
         >
           <img
             class="img-link img-fluid"
-            src="{{ post.image_url }}"
+            src="{{ post.image_url | relative_url }}"
           />
         </a>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
         <ul class="list-unstyled">
           <li>
             <strong>

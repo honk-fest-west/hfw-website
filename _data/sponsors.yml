@@ -27,9 +27,10 @@ food:
   - name: Macrina Bakery
     link: http://macrinabakery.com
     image: /assets/images/sponsors/macrina.png
-  - name: Columbia City Bakery
-    link: http://www.columbiacitybackery.com
-    image: /assets/images/sponsors/ccbakery.png
   - name: Fresh Flours
     link: http://www.freshfloursseattle.com
     image: /assets/images/sponsors/fresh_flours.jpeg
+transportation:
+  - name: Lime
+    link: https://www.li.me/
+    image: /assets/images/sponsors/lime.png

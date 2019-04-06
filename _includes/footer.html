@@ -36,7 +36,7 @@
           site.data.sponsors.venues | concat: site.data.sponsors.food |
           concat: site.data.sponsors.transportation %}
           {% for sponsor in sponsors %}
-          <a href="{{ sponsor.link }}" target="_blank">
+          <a href="{{ sponsor.link }}" target="_blank" class="rounded">
             <img
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"

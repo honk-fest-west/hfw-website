@@ -17,9 +17,14 @@ footer {
   }
 
   .sponsors {
-    img {
-      height: 55px;
+    a {
+      background-color: white;
       margin: 5px;
+      padding: 2px;
+
+      img {
+        height: 55px;
+      }
     }
   }
 

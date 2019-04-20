@@ -6,6 +6,7 @@ external_url: https://www.facebook.com/events/2851437438216252/
 image_url: /assets/images/events/2019/spring-fling.jpg
 event_date: 2019-05-02 9:00
 location: "Peddler Brewing Company 1514 NW Leary Way, Seattle WA 98107"
+categories: [events]
 ---
 
 HONK! Fest West presents our spring fundraiser event at Peddler Brewing Company!

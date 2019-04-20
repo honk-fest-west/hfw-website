@@ -84,6 +84,9 @@ golden_dino: show
             <strong>
               <span class="text-muted">When:</span> 
               {{ post.event_date | date: "%a, %B %d, %l:%M%P" }}
+              {% if post.event_time_end %}
+              to {{ post.event_time_end }}
+              {% endif %}
             </strong>
           </li>
           <li>

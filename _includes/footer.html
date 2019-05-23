@@ -32,8 +32,7 @@
       <div class="col-md-4 text-center">
         <h3 class="ft-fml-2 ft-clr-3">Sponsors</h3>
         <div class="sponsors d-flex flex-wrap justify-content-around">
-          {% assign sponsors = site.data.sponsors.arts | concat:
-          site.data.sponsors.venues | concat: site.data.sponsors.food |
+          {% assign sponsors = site.data.sponsors.arts |
           concat: site.data.sponsors.transportation %}
           {% for sponsor in sponsors %}
           <a href="{{ sponsor.link }}" target="_blank" class="rounded">

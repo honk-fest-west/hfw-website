@@ -13,13 +13,12 @@ arts:
   - name: 4 Culture
     link: http://www.4culture.org
     image: /assets/images/sponsors/4culture.png
-venues:
-  - name: City of Seattle
-    link: https://www.seattle.gov
-    image: /assets/images/sponsors/city_of_seattle.jpg
-  - name: Seattle Parks And Recreation
-    link: https://www.seattle.gov/parks
-    image: /assets/images/sponsors/seattle_parks.jpg
+  - name: Seattle Department of Neighborhoods
+    link: https://www.seattle.gov/neighborhoods
+    image: /assets/images/sponsors/dept_of_neighborhoods.jpg
+  - name: King County 
+    link: https://www.kingcounty.gov
+    image: /assets/images/sponsors/king_county.gif
 food:
   - name: nuflours
     link: https://www.nuflours.com

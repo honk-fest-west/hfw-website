@@ -71,6 +71,16 @@ golden_dino: show
           This project is funded in part by a Neighborhood Matching Fund award from 
           <a href="https://www.seattle.gov/neighborhood" target="_blank">Seattle Department of Neighborhoods</a>. 
         </p>
+        <div class="d-flex justify-content-around">
+          <a href="{{ site.data.sponsors.neighborhoods.link }}" target="_blank">
+            <img
+              src="{{ site.data.sponsors.neighborhoods.image | relative_url }}"
+              alt="{{ site.data.sponsors.neighborhoods.name }}"
+              class="mx-auto d-block rounded mb-3"
+              style="padding: 2px; height: 100px; background-color: white;"
+            />
+          </a>
+        </div>
         <div class="d-flex flex-wrap justify-content-around">
           {% for sponsor in site.data.sponsors.arts %}
           <a href="{{ sponsor.link }}" target="_blank">
@@ -113,6 +123,26 @@ golden_dino: show
           and beyond!
         </p>
       </div>
+      <div class="contrast-container">	
+        <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Venues</span></h2>	
+        <p>	
+          HONK! festivals are a celebration of music in the streets, parks and	
+          neighborhoods. We also rely on donated green-room space for instrument	
+          storage and musician downtime, feeding, socializing and jamming. 
+        </p>	
+        <div class="d-flex flex-wrap justify-content-around">	
+          {% for sponsor in site.data.sponsors.venues %}	
+          <a href="{{ sponsor.link }}" target="_blank">	
+            <img	
+              src="{{ sponsor.image | relative_url }}"	
+              alt="{{ sponsor.name }}"	
+              class="rounded"	
+              style="height: 80px;"	
+            />	
+          </a>	
+          {% endfor %}	
+        </div>	
+      </div>
       <div class="contrast-container">
         <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Food</span></h2>
         <p>
@@ -127,7 +157,7 @@ golden_dino: show
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"
               class="rounded mb-3"
-              style="height: 90px;"
+              style="height: 80px;"
             />
           </a>
           {% endfor %}
@@ -148,7 +178,7 @@ golden_dino: show
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"
               class="rounded mb-3"
-              style="height: 90px;"
+              style="height: 80px;"
             />
           </a>
           {% endfor %}

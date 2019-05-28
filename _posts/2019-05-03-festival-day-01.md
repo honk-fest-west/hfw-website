@@ -14,7 +14,7 @@ categories: [festival]
 Day one of HONK! Fest West Festival starts in the South Park neighborhood of Seattle.
 
 <div><i class="far fa-calendar-alt ft-clr-1"></i>&nbsp;<a href="/schedule/2019.html#day-1">Schedule</a></div>
-<div><i class="far fa-map ft-clr-1"></i>&nbsp;<a href="/assets/downloads/2019/2019HFWProgram.pdf" target="_blank">Festival Guide</a></div>
+<div><i class="far fa-map ft-clr-1"></i>&nbsp;<a href="/assets/downloads/2019/2019HFWProgram-02.pdf" target="_blank">Festival Guide</a></div>
 <div><i class="fas fa-city ft-clr-1"></i>&nbsp;<a href="http://allaboutsouthpark.com/" target="_blank">Learn more about the South Park Neighborhood</a></div>
 <br/>
 *Free / All Ages*

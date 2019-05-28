@@ -7,7 +7,7 @@
           <img
             src="{{ site.data.sponsors.kuow.image | relative_url }}"
             alt="{{ site.data.sponsors.kuow.name }}"
-            style="height: 100px;"
+            style="height: 80px;"
           />
         </a>
       </div>
@@ -17,7 +17,7 @@
             src="{{ site.data.sponsors.shunpike.image | relative_url }}"
             alt="{{ site.data.sponsors.shunpike.name }}"
             class="rounded mx-auto d-block"
-            style="padding: 10px; height: 100px; background-color: #f4efdf;"
+            style="padding: 10px; height: 80px; background-color: #f4efdf;"
           />
         </a>
         <p>
@@ -31,9 +31,18 @@
       </div>
       <div class="col-md-4 text-center">
         <h3 class="ft-fml-2 ft-clr-3">Sponsors</h3>
+        <div class="d-flex justify-content-around">
+          <a href="{{ site.data.sponsors.neighborhoods.link }}" target="_blank">
+            <img
+              src="{{ site.data.sponsors.neighborhoods.image | relative_url }}"
+              alt="{{ site.data.sponsors.neighborhoods.name }}"
+              class="mx-auto d-block rounded"
+              style="padding: 2px; margin: 5px; height: 90px; background-color: white;"
+            />
+          </a>
+        </div>
         <div class="sponsors d-flex flex-wrap justify-content-around">
-          {% assign sponsors = site.data.sponsors.arts |
-          concat: site.data.sponsors.transportation %}
+          {% assign sponsors = site.data.sponsors.arts %}
           {% for sponsor in sponsors %}
           <a href="{{ sponsor.link }}" target="_blank" class="rounded">
             <img

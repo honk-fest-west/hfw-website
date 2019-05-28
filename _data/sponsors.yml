@@ -6,6 +6,10 @@ kuow:
   name: KUOW
   link: http://kuow.org
   image: /assets/images/sponsors/kuow.png
+neighborhoods:
+  name: Seattle Department of Neighborhoods
+  link: https://www.seattle.gov/neighborhoods
+  image: /assets/images/sponsors/dept_of_neighborhoods.png
 arts:
   - name: Tides Foundation
     link: http://www.tides.org
@@ -13,12 +17,9 @@ arts:
   - name: 4 Culture
     link: http://www.4culture.org
     image: /assets/images/sponsors/4culture.png
-  - name: Seattle Department of Neighborhoods
-    link: https://www.seattle.gov/neighborhoods
-    image: /assets/images/sponsors/dept_of_neighborhoods.jpg
   - name: King County 
     link: https://www.kingcounty.gov
-    image: /assets/images/sponsors/king_county.gif
+    image: /assets/images/sponsors/king_county.png
 food:
   - name: nuflours
     link: https://www.nuflours.com
@@ -29,6 +30,13 @@ food:
   - name: Fresh Flours
     link: http://www.freshfloursseattle.com
     image: /assets/images/sponsors/fresh_flours.jpeg
+venues:
+  - name: NEPANTLA Cultural Arts
+    link: https://www.nepantlaculturalarts.com/
+    image: /assets/images/sponsors/nepantla_logo_960.jpg
+  - name: Miss Sheryl's
+    link: https://www.misssherylsballet.com/
+    image: /assets/images/sponsors/misssheryl.jpg
 transportation:
   - name: Lime
     link: https://www.li.me/

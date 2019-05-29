@@ -30,6 +30,9 @@ food:
   - name: Fresh Flours
     link: http://www.freshfloursseattle.com
     image: /assets/images/sponsors/fresh_flours.jpeg
+  - name: Ada's Discovery Cafe
+    link: https://www.discovery.adasbooks.com/
+    image: /assets/images/sponsors/adas.jpg
 venues:
   - name: NEPANTLA Cultural Arts
     link: https://www.nepantlaculturalarts.com/

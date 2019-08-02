@@ -56,36 +56,6 @@ golden_dino: show
     </h2>
   </div>
 
-  <div class="contrast-container">
-    <h2 class="ft-fml-1 ft-bdr-1">
-      <span class="ft-clr-1 ">Three Days of Brass and Beats in the Streets</span>
-    </h2>
-    <div class="row">
-      <div class="col-md-5 col-lg-3">
-        <a
-          target="_blank"
-          href="https://www.thestranger.com/music/2019/05/22/40266420/three-days-of-brass-and-beats-in-the-streets"
-        >
-          <img
-            class="img-link img-fluid"
-            src="https://media2.fdncms.com/stranger/imager/u/large/40266410/img_8261.jpg"
-          />
-        </a>
-      </div>
-      <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
-        <div>
-          <p>
-            In some ways, HONK! Fest West feels like an unintended antidote to the Seattle Freeze.
-            The free, three-day, community-supported music festival—which is devoted to street band culture and features marching bands, samba lines, drum corps, and anything else acoustic and mobile that makes an organized racket—is meant to engage.
-          </p>
-          <p>
-            > Read the full article at <a target="_blank" href="https://www.thestranger.com/music/2019/05/22/40266420/three-days-of-brass-and-beats-in-the-streets">www.thestranger.com</a>.
-          </p>
-        </div>
-      </div>
-    </div>  
-  </div>
-
   {% for post in site.posts %}
   <div class="contrast-container">
     <h2 class="ft-fml-1 ft-bdr-1">
@@ -107,6 +77,7 @@ golden_dino: show
       <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
         <ul class="list-unstyled">
           <li>
+            {% if post.event_date %}
             <strong>
               <span class="text-muted">When:</span> 
               {{ post.event_date | date: "%a, %B %d, %l:%M%P" }}
@@ -114,12 +85,15 @@ golden_dino: show
               to {{ post.event_time_end }}
               {% endif %}
             </strong>
+            {% endif %}
           </li>
           <li>
+            {% if post.location %}
             <strong>
               <span class="text-muted">Where:</span> 
               <a href="https://www.google.com/maps/search/{{ post.location }}" target="_blank">{{ post.location }}</a>
             </strong>
+            {% endif %}
           </li>
         </ul>
         <div>{{ post.content }}</div>

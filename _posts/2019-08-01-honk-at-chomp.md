@@ -6,7 +6,7 @@ event_date: 2019-08-17 14:30
 event_time_end: 6:00pm
 external_url: https://www.chomplocal.org/honk-parade/
 location: "Marymoor Park, Redmond, WA"
-image_url: "/assets/images/posts/chomp.png"
+image_url: "/assets/images/posts/Chomp.png"
 categories: [festival]
 ---
 

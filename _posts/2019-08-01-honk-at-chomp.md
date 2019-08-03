@@ -2,8 +2,8 @@
 layout: post
 title: HONK! At CHOMP!
 subtitle: 
-event_date: 2019-08-17 14:30
-event_time_end: 6:00pm
+event_date: 2019-08-17 10:00
+event_time_end: 2:30
 external_url: https://www.chomplocal.org/honk-parade/
 location: "Marymoor Park, Redmond, WA"
 image_url: "/assets/images/posts/Chomp.png"

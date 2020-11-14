@@ -24,24 +24,22 @@ at the bottom](#reverting-back-to-wordpress).
 ## Local Installation
 
 1. Install [Ruby >= 2.2.5](https://www.ruby-lang.org/en/downloads/)
-2. Install [Jekyll](https://jekyllrb.com)
-
-   ```
-   gem install jekyll
-   ```
-
-3. Install [git](https://git-scm.com/downloads)
-4. Clone this repository
+2. Install [git](https://git-scm.com/downloads)
+3. Clone this repository
 
    ```
    git clone https://github.com/honk-fest-west/hfw-website.git
    ```
 
-5. Change directory to `hfw-website`
+4. Change directory to `hfw-website`
+5. Install dependencies
+   ```
+   bundle install
+   ```
 6. Start the jekyll server
 
    ```
-   jekyll serve
+   bundle exec jekyll serve
    ```
 
 7. Open your browser to `http://localhost:4000`

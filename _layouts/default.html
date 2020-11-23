@@ -33,15 +33,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://www.honkfestwest.org{{ page.url }}" />
+    <meta
+      property="og:url"
+      content="https://www.honkfestwest.org{{ page.url }}"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="HONK! Fest West is an accessible community music festival driven by the energetic performances of street bands in public spaces. In 2019, we are embracing activism by engaging with and empowering the underserved communities of our region." />
-    <meta property="og:image" content="https://www.honkfestwest.org/assets/images/festival/2019/hfw-logo.png" />
+    <meta
+      property="og:description"
+      content="HONK! Fest West is an accessible community music festival driven by the energetic performances of street bands in public spaces. In 2019, we are embracing activism by engaging with and empowering the underserved communities of our region."
+    />
+    <meta
+      property="og:image"
+      content="https://www.honkfestwest.org/assets/images/festival/2019/hfw-logo.png"
+    />
     <meta property="og:image:width" content="1740" />
     <meta property="og:image:height" content="1230" />
-
-
 
     <!-- Bootstrap CSS -->
     <link
@@ -52,10 +59,10 @@
     />
 
     <!-- Font Awesome -->
-    <link 
-      rel="stylesheet" 
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
 
@@ -83,6 +90,7 @@
       <div class="background-image"></div>
       <div class="background-color-layer"></div>
     </div>
+    <div>{% include top-banner.html %}</div>
     <header>{% include navbar.html %}</header>
     <main class="flex-shrink-0 my-4" role="main">{{ content }}</main>
     <footer class="footer mt-auto">{% include footer.html %}</footer>

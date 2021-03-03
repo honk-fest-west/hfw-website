@@ -31,7 +31,7 @@ golden_dino: show
         <p class="text-center">
           <strong>Shunpike</strong> <br />
           (with HONK! Fest West in the memo line) <br />
-          at 220 2nd Ave. S, Suite 102, Seattle, WA 98104
+          at PO BOX 22439, Seattle, WA 98122
         </p>
         <p>
           or securely online at:
@@ -57,19 +57,25 @@ golden_dino: show
             src="{{ site.data.sponsors.shunpike.image | relative_url }}"
             alt="{{ site.data.sponsors.shunpike.name }}"
             class="rounded mx-auto d-block"
-            style="padding: 10px; height: 100px; background-color: #f4efdf;"
+            style="padding: 10px; height: 100px; background-color: #f4efdf"
           />
         </a>
         <p class="mt-3">
           HONK! Fest West is supported, in part, by grant awards from
-          <a href="http://www.4culture.org/" target="_blank">4Culture</a>, 
-          the Community Investments Fund of
-          <a href="http://www.tides.org/" target="_blank">Tides Foundation</a> and
-          <a href="https://https://www.kingcounty.gov" target="_blank">King County Local Services</a>.
+          <a href="http://www.4culture.org/" target="_blank">4Culture</a>, the
+          Community Investments Fund of
+          <a href="http://www.tides.org/" target="_blank">Tides Foundation</a>
+          and
+          <a href="https://https://www.kingcounty.gov" target="_blank"
+            >King County Local Services</a
+          >.
         </p>
         <p>
-          This project is funded in part by a Neighborhood Matching Fund award from 
-          <a href="https://www.seattle.gov/neighborhood" target="_blank">Seattle Department of Neighborhoods</a>. 
+          This project is funded in part by a Neighborhood Matching Fund award
+          from
+          <a href="https://www.seattle.gov/neighborhood" target="_blank"
+            >Seattle Department of Neighborhoods</a
+          >.
         </p>
         <div class="d-flex justify-content-around">
           <a href="{{ site.data.sponsors.neighborhoods.link }}" target="_blank">
@@ -77,7 +83,7 @@ golden_dino: show
               src="{{ site.data.sponsors.neighborhoods.image | relative_url }}"
               alt="{{ site.data.sponsors.neighborhoods.name }}"
               class="mx-auto d-block rounded mb-3"
-              style="padding: 2px; height: 100px; background-color: white;"
+              style="padding: 2px; height: 100px; background-color: white"
             />
           </a>
         </div>
@@ -88,7 +94,7 @@ golden_dino: show
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"
               class="rounded mb-3"
-              style="height: 80px;"
+              style="height: 80px"
             />
           </a>
           {% endfor %}
@@ -123,25 +129,25 @@ golden_dino: show
           and beyond!
         </p>
       </div>
-      <div class="contrast-container">	
-        <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Venues</span></h2>	
-        <p>	
-          HONK! festivals are a celebration of music in the streets, parks and	
-          neighborhoods. We also rely on donated green-room space for instrument	
-          storage and musician downtime, feeding, socializing and jamming. 
-        </p>	
-        <div class="d-flex flex-wrap justify-content-around">	
-          {% for sponsor in site.data.sponsors.venues %}	
-          <a href="{{ sponsor.link }}" target="_blank">	
-            <img	
-              src="{{ sponsor.image | relative_url }}"	
-              alt="{{ sponsor.name }}"	
-              class="rounded"	
-              style="height: 80px;"	
-            />	
-          </a>	
-          {% endfor %}	
-        </div>	
+      <div class="contrast-container">
+        <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Venues</span></h2>
+        <p>
+          HONK! festivals are a celebration of music in the streets, parks and
+          neighborhoods. We also rely on donated green-room space for instrument
+          storage and musician downtime, feeding, socializing and jamming.
+        </p>
+        <div class="d-flex flex-wrap justify-content-around">
+          {% for sponsor in site.data.sponsors.venues %}
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img
+              src="{{ sponsor.image | relative_url }}"
+              alt="{{ sponsor.name }}"
+              class="rounded"
+              style="height: 80px"
+            />
+          </a>
+          {% endfor %}
+        </div>
       </div>
       <div class="contrast-container">
         <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Food</span></h2>
@@ -157,129 +163,110 @@ golden_dino: show
               src="{{ sponsor.image | relative_url }}"
               alt="{{ sponsor.name }}"
               class="rounded mb-3"
-              style="height: 80px;"
+              style="height: 80px"
             />
           </a>
           {% endfor %}
         </div>
       </div>
-      <div class="contrast-container">
-        <h2 class="ft-fml-1 ft-bdr-1"><span class="ft-clr-1">Transportation</span></h2>
-        <p>
-          With three distinct venue locations and housing all over the city of Seattle, our
-          performers have a lot of ground to cover during HONK! Fest West. Thanks to our 
-          transportation sponsors, we no longer have to walk up our dreaded Seattle hills, 
-          both ways, while carrying a TUBA!
-        </p>
-        <div class="d-flex flex-wrap justify-content-around">
-          {% for sponsor in site.data.sponsors.transportation %}
-          <a href="{{ sponsor.link }}" target="_blank">
-            <img
-              src="{{ sponsor.image | relative_url }}"
-              alt="{{ sponsor.name }}"
-              class="rounded mb-3"
-              style="height: 80px;"
-            />
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="contrast-container rounded">
-        <h2 class="ft-fml-1 ft-bdr-1 text-center">
-          <span class="ft-clr-1">Sponsorship Levels</span>
-        </h2>
-        <h3 class="ft-fml-2 mt-4 text-center">
-          <a
-            href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=5000"
-            target="_blank"
-            class="font-weight-normal"
-            >Grand Marshall</a
-          >
-          <span class="text-muted">$5,000+</span>
-        </h3>
-        <ul>
-          <li>Top billing as a “Title Sponsor” of our event</li>
-          <li>
-            Large color logo on sponsors web page, promotional material, email
-            newsletters
-          </li>
-          <li>Color business card ad in festival program</li>
-          <li>Booth placement available Friday & Saturday (10×10 or smaller)</li>
-          <li>Large banners at appropriate venues</li>
-          <li>Social media & website blog coverage year-round</li>
-          <li>Verbal recognition throughout festival</li>
-          <li>10 tickets to special events and afterparties for 1 year</li>
-          <li>
-            Live 1 hour performance (subject to band availability) from
-            participating band
-          </li>
-        </ul>
-        <h3 class="ft-fml-2 mt-4 text-center">
-          <a
-            href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=2500"
-            target="_blank"
-            class="font-weight-normal"
-            >Top Brass</a
-          >
-          <span class="text-muted">$2,500</span>
-        </h3>
-        <ul>
-          <li>Featured billing as an sponsor of our event</li>
-          <li>
-            Color logo on sponsors web page, promotional material, email
-            newsletters
-          </li>
-          <li>Small ad in festival program</li>
-          <li>Signage at appropriate venues</li>
-          <li>
-            Booth placement available Friday and Saturday (10×10 or smaller)
-          </li>
-          <li>Social media & website blog coverage throughout festival</li>
-          <li>Verbal recognition throughout festival</li>
-          <li>Invites to select special events and afterparties`</li>
-        </ul>
-        <h3 class="ft-fml-2 mt-4 text-center">
-          <a
-            href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=1000"
-            target="_blank"
-            class="font-weight-normal"
-            >Horn Star</a
-          >
-          <span class="text-muted">$1,000</span>
-        </h3>
-        <ul>
-          <li>Color logo on sponsors web page</li>
-          <li>Shared booth placement available</li>
-          <li>Social media shoutouts and recognition</li>
-          <li>Invited to select special events</li>
-        </ul>
-        <h3 class="ft-fml-2 mt-4 text-center">
-          <a
-            href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=500"
-            target="_blank"
-            class="font-weight-normal"
-            >Band Booster</a
-          >
-          <span class="text-muted">$500</span>
-        </h3>
-        <ul>
-          <li>Logo on sponsors web page</li>
-          <li>Sponsor listing where appropriate</li>
-        </ul>
-        <h3 class="ft-fml-2 mt-4 text-center">
-          <a
-            href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate"
-            target="_blank"
-            class="font-weight-normal"
-            >In-Kind Contribution</a
-          >
-        </h3>
-        <ul>
-          <li>Promotions determined on a case-by-case basis</li>
-        </ul>
+      <div class="col-md-4">
+        <div class="contrast-container rounded">
+          <h2 class="ft-fml-1 ft-bdr-1 text-center">
+            <span class="ft-clr-1">Sponsorship Levels</span>
+          </h2>
+          <h3 class="ft-fml-2 mt-4 text-center">
+            <a
+              href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=5000"
+              target="_blank"
+              class="font-weight-normal"
+              >Grand Marshall</a
+            >
+            <span class="text-muted">$5,000+</span>
+          </h3>
+          <ul>
+            <li>Top billing as a “Title Sponsor” of our event</li>
+            <li>
+              Large color logo on sponsors web page, promotional material, email
+              newsletters
+            </li>
+            <li>Color business card ad in festival program</li>
+            <li>
+              Booth placement available Friday & Saturday (10×10 or smaller)
+            </li>
+            <li>Large banners at appropriate venues</li>
+            <li>Social media & website blog coverage year-round</li>
+            <li>Verbal recognition throughout festival</li>
+            <li>10 tickets to special events and afterparties for 1 year</li>
+            <li>
+              Live 1 hour performance (subject to band availability) from
+              participating band
+            </li>
+          </ul>
+          <h3 class="ft-fml-2 mt-4 text-center">
+            <a
+              href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=2500"
+              target="_blank"
+              class="font-weight-normal"
+              >Top Brass</a
+            >
+            <span class="text-muted">$2,500</span>
+          </h3>
+          <ul>
+            <li>Featured billing as an sponsor of our event</li>
+            <li>
+              Color logo on sponsors web page, promotional material, email
+              newsletters
+            </li>
+            <li>Small ad in festival program</li>
+            <li>Signage at appropriate venues</li>
+            <li>
+              Booth placement available Friday and Saturday (10×10 or smaller)
+            </li>
+            <li>Social media & website blog coverage throughout festival</li>
+            <li>Verbal recognition throughout festival</li>
+            <li>Invites to select special events and afterparties`</li>
+          </ul>
+          <h3 class="ft-fml-2 mt-4 text-center">
+            <a
+              href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=1000"
+              target="_blank"
+              class="font-weight-normal"
+              >Horn Star</a
+            >
+            <span class="text-muted">$1,000</span>
+          </h3>
+          <ul>
+            <li>Color logo on sponsors web page</li>
+            <li>Shared booth placement available</li>
+            <li>Social media shoutouts and recognition</li>
+            <li>Invited to select special events</li>
+          </ul>
+          <h3 class="ft-fml-2 mt-4 text-center">
+            <a
+              href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate?t=500"
+              target="_blank"
+              class="font-weight-normal"
+              >Band Booster</a
+            >
+            <span class="text-muted">$500</span>
+          </h3>
+          <ul>
+            <li>Logo on sponsors web page</li>
+            <li>Sponsor listing where appropriate</li>
+          </ul>
+          <h3 class="ft-fml-2 mt-4 text-center">
+            <a
+              href="https://poweredbyshunpike.org/c/PBS/a/honkfestwest/Donate"
+              target="_blank"
+              class="font-weight-normal"
+              >In-Kind Contribution</a
+            >
+          </h3>
+          <ul>
+            <li>Promotions determined on a case-by-case basis</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

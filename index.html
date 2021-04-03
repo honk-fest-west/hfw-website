@@ -22,12 +22,12 @@ golden_dino: show
   >
     <meta
       itemprop="description"
-      content="HONK! Fest West is an accessible community music festival driven by the energetic performances of street bands in public spaces. In 2020, we are embracing activism by engaging with and empowering the underserved communities of our region."
+      content="HONK! Fest West is an accessible community music festival driven by the energetic performances of street bands in public spaces."
     />
     <link itemprop="url" href="https://www.honkfestwest.org" rel="author" />
     <h2
       class="ft-fml-2 ft-clr-2 text-center m-0 d-flex justify-content-center flex-wrap"
-      style="letter-spacing: 0.04em;"
+      style="letter-spacing: 0.04em"
     >
       <a
         class="d-block font-weight-normal"
@@ -50,55 +50,10 @@ golden_dino: show
     </h2>
   </div>
 
-  {% for post in site.posts %}
   <div class="contrast-container">
     <h2 class="ft-fml-1 ft-bdr-1">
-      <span class="ft-clr-1 ">{{ post.title }}</span>
-      <span class="text-muted">{{ post.subtitle }}</span>
-    </h2>
-    <div class="row">
-      <div class="col-md-5 col-lg-3">
-        <a
-          target="_blank"
-          href="{{ post.external_url }}"
-        >
-          <img
-            class="img-link img-fluid"
-            src="{{ post.image_url | relative_url }}"
-          />
-        </a>
-      </div>
-      <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
-        <ul class="list-unstyled">
-          <li>
-            {% if post.event_date %}
-            <strong>
-              <span class="text-muted">When:</span> 
-              {{ post.event_date | date: "%a, %B %d, %l:%M%P" }}
-              {% if post.event_time_end %}
-              to {{ post.event_time_end }}
-              {% endif %}
-            </strong>
-            {% endif %}
-          </li>
-          <li>
-            {% if post.location %}
-            <strong>
-              <span class="text-muted">Where:</span> 
-              <a href="https://www.google.com/maps/search/{{ post.location }}" target="_blank">{{ post.location }}</a>
-            </strong>
-            {% endif %}
-          </li>
-        </ul>
-        <div>{{ post.content }}</div>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-  <div class="contrast-container">
-    <h2 class="ft-fml-1 ft-bdr-1">
-      <span class="ft-clr-1 ">Volunteers Needed!</span>
+      <span class="ft-clr-1">Volunteers Needed!</span>
+      <span class="text-muted">2021</span>
     </h2>
     <div class="row">
       <div class="col-md-5 col-lg-3">
@@ -115,19 +70,65 @@ golden_dino: show
       <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
         <div>
           <p>
-          HONK! Fest West is completely free to the public. 
-          We run almost entirely on the donations from fans like YOU and the hard work of our volunteers. 
-          For this year's festival, we need dedicated, passionate volunteers with a passion for live music and community involvement. 
-          If this sounds like you, we'd love to have you join our team!
+            HONK! Fest West is completely free to the public. We run almost
+            entirely on the donations from fans like YOU and the hard work of
+            our volunteers. For this year's festival, we need dedicated,
+            passionate volunteers with a passion for live music and community
+            involvement. If this sounds like you, we'd love to have you join our
+            team!
           </p>
           <p>
-          You can register to volunteer here: <a target="_blank" href="https://bit.ly/2DB9L2r">https://bit.ly/2DB9L2r</a>.
+            More info on volunteering for HONK! Fest West on our
+            <a href="{{ '/volunteer.html' | relative_url }}">Volunteer Page</a>.
           </p>
-          <p>More info on volunteering for HONK! Fest West on our <a href="{{ '/volunteer.html' | relative_url }}">Volunteer Page</a>.</p>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
+  {% for post in site.posts %}
+  <div class="contrast-container">
+    <h2 class="ft-fml-1 ft-bdr-1">
+      <span class="ft-clr-1">{{ post.title }}</span>
+      <span class="text-muted">{{ post.subtitle }}</span>
+    </h2>
+    <div class="row">
+      <div class="col-md-5 col-lg-3">
+        <a target="_blank" href="{{ post.external_url }}">
+          <img
+            class="img-link img-fluid"
+            src="{{ post.image_url | relative_url }}"
+          />
+        </a>
+      </div>
+      <div class="col-md-7 col-lg-9 pt-3 pt-md-1">
+        <ul class="list-unstyled">
+          <li>
+            {% if post.event_date %}
+            <strong>
+              <span class="text-muted">When:</span>
+              {{ post.event_date | date: "%a, %B %d, %l:%M%P" }} {% if
+              post.event_time_end %} to {{ post.event_time_end }} {% endif %}
+            </strong>
+            {% endif %}
+          </li>
+          <li>
+            {% if post.location %}
+            <strong>
+              <span class="text-muted">Where:</span>
+              <a
+                href="https://www.google.com/maps/search/{{ post.location }}"
+                target="_blank"
+                >{{ post.location }}</a
+              >
+            </strong>
+            {% endif %}
+          </li>
+        </ul>
+        <div>{{ post.content }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 
   <div class="row">
     <div class="col-lg-4">
@@ -135,9 +136,7 @@ golden_dino: show
         <h2 class="ft-fml-1 ft-clr-1 ft-bdr-1 text-center">About</h2>
         <p>
           HONK! Fest West is an accessible community music festival driven by
-          the energetic performances of street bands in public spaces. In 2019,
-          we are embracing activism by engaging with and empowering the
-          underserved communities of our region.
+          the energetic performances of street bands in public spaces.
         </p>
         <div class="d-flex justify-content-left">
           <a
@@ -155,7 +154,9 @@ golden_dino: show
         <p>
           If you want to volunteer, and help make HONK! Fest West magic, contact
           our Volunteer Coordinator via our volunteer page or send an email to
-          <a href="mailto:volunteers@honkfestwest.org">volunteers@honkfestwest.org</a>
+          <a href="mailto:volunteers@honkfestwest.org"
+            >volunteers@honkfestwest.org</a
+          >
         </p>
         <div class="d-flex justify-content-left">
           <a

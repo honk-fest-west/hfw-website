@@ -7,7 +7,7 @@
           <img
             src="{{ site.data.sponsors.kuow.image | relative_url }}"
             alt="{{ site.data.sponsors.kuow.name }}"
-            style="height: 80px;"
+            style="height: 80px"
           />
         </a>
       </div>
@@ -17,7 +17,7 @@
             src="{{ site.data.sponsors.shunpike.image | relative_url }}"
             alt="{{ site.data.sponsors.shunpike.name }}"
             class="rounded mx-auto d-block"
-            style="padding: 10px; height: 80px; background-color: #f4efdf;"
+            style="padding: 10px; height: 80px; background-color: #f4efdf"
           />
         </a>
         <p>
@@ -37,13 +37,18 @@
               src="{{ site.data.sponsors.neighborhoods.image | relative_url }}"
               alt="{{ site.data.sponsors.neighborhoods.name }}"
               class="mx-auto d-block rounded"
-              style="padding: 2px; margin: 5px; height: 90px; background-color: white;"
+              style="
+                padding: 2px;
+                margin: 5px;
+                height: 90px;
+                background-color: white;
+              "
             />
           </a>
         </div>
         <div class="sponsors d-flex flex-wrap justify-content-around">
-          {% assign sponsors = site.data.sponsors.arts %}
-          {% for sponsor in sponsors %}
+          {% assign sponsors = site.data.sponsors.arts %} {% for sponsor in
+          sponsors %}
           <a href="{{ sponsor.link }}" target="_blank" class="rounded">
             <img
               src="{{ sponsor.image | relative_url }}"
@@ -62,7 +67,7 @@
     <div class="row">
       <div class="col-md-4 text-center">
         <a class="clr-home" href="{{ '/' | relative_url }}"
-          >© 2020 HONK! Fest West</a
+          >© 2021 HONK! Fest West</a
         >
         <a
           href="{{ '/committee.html' | relative_url }}"

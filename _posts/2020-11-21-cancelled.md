@@ -1,14 +1,14 @@
 ---
 layout: post
-title: HONK! 2020
-subtitle: Cancelled
+title: HONK! United
+subtitle: 2020
 external_url: 'https://www.youtube.com/playlist?list=PLwfVFnq4hq1D_wh9F2ljku87xqOR2UdLz'
 image_url: 'https://honkunited.org/wp-content/uploads/2020/09/honkunited-300x262.png'
 categories: [festival]
 ---
 
 <p>
-If you still need to fill your gaping 2020 sized HONK! hole, checkout the HONK!United 2020 playlist with HONK! bands submitting videos from around the globe -- including yours truly, H!FW.
+Checkout the HONK!United 2020 playlist with HONK! bands submitting videos from around the globe -- including yours truly, H!FW.
 </p>
 
 <a target="_blank" href="https://www.youtube.com/playlist?list=PLwfVFnq4hq1D_wh9F2ljku87xqOR2UdLz">HONK!United 2020</a>

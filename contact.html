@@ -2,29 +2,90 @@
 layout: default
 title: Contact - HONK! Fest West
 golden_dino: show
+members:
+  - name: Jeanette
+    title: Chair
+    image: /assets/images/people/Jeanette.jpg
+  - name: Dev
+    title: Treasurer
+  - name: M*A
+    title: Secretary
+    image: /assets/images/people/MA.jpg
+  - name: Dee
+    title: Band Liaison
+  - name: Rebecca
+    title: Band Booker
+  - name: Leslie
+    title: Food Lead
+  - name: Mark
+    title: Volunteer Coordinator
+  - name: Adrienne
+    title: Creative Lead
+    image: /assets/images/people/Adrienne.jpg
+  - name: Lizzie
+    title: Operations Lead
+    image: /assets/images/people/Lizzie.jpg
+  - name: Elsbeth
+    title: VC's Left Hand
+  - name: Charlie
+    title: Videographer
+  - name: Susan
+    title: Merch & Mother of the Golden Dino
+    image: /assets/images/people/Susan.jpg
+  - name: Ethan
+    title: Astral Ethaning Coordinator
+    image: /assets/images/people/Ethan.jpg
 ---
 
-<div class="container">
+<div id="contact-page" class="container">
   <div class="contrast-container">
-    <table style="margin: 0 auto;">
+    <table style="margin: 0 auto">
       <tbody class="table table-borderless">
         <tr>
           <td>Booking info:</td>
-          <td><a href="mailto:booking@honkfestwest.org">booking@honkfestwest.org</a></td>
+          <td>
+            <a href="mailto:booking@honkfestwest.org"
+              >booking@honkfestwest.org</a
+            >
+          </td>
         </tr>
         <tr>
           <td>Volunteers (this could be you!) :</td>
-          <td><a href="mailto:volunteers@honkfestwest.org">volunteers@honkfestwest.org</a></td>
+          <td>
+            <a href="mailto:volunteers@honkfestwest.org"
+              >volunteers@honkfestwest.org</a
+            >
+          </td>
         </tr>
         <tr>
           <td>General information:</td>
-          <td><a href="mailto:event@honkfestwest.org">event@honkfestwest.org</a></td>
+          <td>
+            <a href="mailto:event@honkfestwest.org">event@honkfestwest.org</a>
+          </td>
         </tr>
         <tr>
           <td>Donations, press, support:</td>
-          <td><a href="mailto:info@honkfestwest.org">info@honkfestwest.org</a></td>
+          <td>
+            <a href="mailto:info@honkfestwest.org">info@honkfestwest.org</a>
+          </td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <h1 class="ft-fml-2 ft-clr-3 text-center">
+    Your <span class="ft-clr-2">HONK! Fest West</span> Committee
+  </h1>
+  <div class="members d-flex flex-wrap justify-content-around">
+    {% for member in page.members %}
+    <div class="member text-center contrast-container">
+      <div
+        class="member-image rounded-circle mx-auto"
+        style="background-image: url({{ member.image | relative_url }})"
+        class="rounded-circle"
+      ></div>
+      <h2 class="ft-fml-2 ft-clr-2 mt-2">{{ member.name }}</h2>
+      <p class="ft-clr-3">{{ member.title }}</p>
+    </div>
+    {% endfor %}
   </div>
 </div>

@@ -2,12 +2,14 @@
 layout: default
 title: Contact - HONK! Fest West
 golden_dino: show
+noimage: /assets/images/people/blank.png
 members:
   - name: Jeanette
     title: Chair
     image: /assets/images/people/Jeanette.jpg
   - name: Dev
     title: Treasurer
+    image: /assets/images/people/blank.png
   - name: M*A
     title: Secretary
     image: /assets/images/people/MA.jpg
@@ -80,11 +82,19 @@ members:
   <div class="members d-flex flex-wrap justify-content-around">
     {% for member in page.members %}
     <div class="member text-center contrast-container">
+      {% if member.image %}
       <div
         class="member-image rounded-circle mx-auto"
         style="background-image: url({{ member.image | relative_url }})"
         class="rounded-circle"
       ></div>
+      {% else %}
+      <div
+        class="member-image rounded-circle mx-auto"
+        style="background-image: url({{ page.noimage | relative_url }})"
+        class="rounded-circle"
+      ></div>
+      {% endif %}
       <h2 class="ft-fml-2 ft-clr-2 mt-2">{{ member.name }}</h2>
       <p class="ft-clr-3">{{ member.title }}</p>
     </div>

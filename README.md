@@ -1,6 +1,6 @@
 # !DEPRECATED! 
 
-**HONK! FEST WEST 2021** This an archive of the first move from wordpress to astro.js
+**HONK! FEST WEST 2021** This an archive of the first move from wordpress to jekyll a static page generator for github pages.
 
 # HONK! Fest West - Website
 

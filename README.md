@@ -1,3 +1,7 @@
+# !DEPRECATED! 
+
+**HONK! FEST WEST 2021** This an archive of the first move from wordpress to astro.js
+
 # HONK! Fest West - Website
 
 The HFW website is a static page site hosted by [Github.com](https://github.com).
